@@ -1,6 +1,6 @@
-import * as typeorm from 'typeorm';
+import { Connection, ConnectionOptions, getConnectionOptions } from 'typeorm';
 
-interface EggTypeORMOptions extends typeorm.ConnectionOptions {
+type EggTypeORMOptions = ConnectionOptions & {
   /**
    * load all models to `app[delegate]` and `ctx[delegate]`, default to `model`
    */
@@ -40,18 +40,18 @@ interface DataSources {
 }
 
 declare module 'egg' {
-  interface IEntity extends PlainObject {}
+  interface IModel extends PlainObject {}
 
   // extend app
   interface Application {
-    entity: IEntity;
-    getConnection(connectionName?: string): typeorm.Connection;
+    model: IModel;
+    getConnection(connectionName?: string): Connection;
   }
 
   // extend context
   interface Context {
-    entity: IEntity;
-    getConnection(connectionName?: string): typeorm.Connection;
+    model: IModel;
+    getConnection(connectionName?: string): Connection;
   }
 
   // extend your config
