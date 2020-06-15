@@ -40,17 +40,17 @@ interface DataSources {
 }
 
 declare module 'egg' {
-  interface IModel extends PlainObject {}
+  interface IEntity extends PlainObject {}
 
   // extend app
   interface Application {
-    model: IModel;
+    entity: IEntity;
     getConnection(connectionName?: string): Connection;
   }
 
   // extend context
   interface Context {
-    model: IModel;
+    entity: IEntity;
     getConnection(connectionName?: string): Connection;
   }
 
