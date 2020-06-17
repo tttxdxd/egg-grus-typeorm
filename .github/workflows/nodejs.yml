@@ -26,6 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm i -g npminstall && npminstall
+    - run: npm i sqlite3
     - run: npm run ci
       env:
         CI: true

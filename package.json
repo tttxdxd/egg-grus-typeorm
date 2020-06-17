@@ -8,7 +8,8 @@
   "keywords": [
     "egg",
     "eggPlugin",
-    "egg-plugin"
+    "egg-plugin",
+    "typeorm"
   ],
   "dependencies": {
     "typeorm": "^0.2.25"
