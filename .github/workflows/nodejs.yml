@@ -17,17 +17,15 @@ jobs:
     strategy:
       matrix:
         node-version: [8.x, 10.x]
-        os: [ubuntu-latest, macos-latest]
+        os: [ubuntu-latest]
 
     services:
       mysql:
         image: mysql:5.7.27
+        ports:
+          - 3306:3306
         env:
           MYSQL_ROOT_PASSWORD: root
-        ports:
-        - 3306
-        volumes:
-        - $HOME/mysql:/var/lib/mysql
 
     steps:
     - uses: actions/checkout@v2
