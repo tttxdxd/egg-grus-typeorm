@@ -46,6 +46,18 @@ exports.typeorm = {
 // {app_root}/config/config.default.js
 exports.typeorm = {
 };
+
+// use egg-ts-helper
+// {app_root}/tshelper.js 
+module.exports = {
+  watchDirs: {
+    model: {
+      directory: 'app/entity', // files directory.
+      generator: 'class', // generator name, eg: class、auto、function、object
+      interface: 'IEntity', // interface name
+    },
+  }
+};
 ```
 
 see [config/config.default.js](config/config.default.js) for more detail.

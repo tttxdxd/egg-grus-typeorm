@@ -1,6 +1,6 @@
 {
   "name": "egg-grus-typeorm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "TypeORM for Egg.js",
   "eggPlugin": {
     "name": "typeorm"
