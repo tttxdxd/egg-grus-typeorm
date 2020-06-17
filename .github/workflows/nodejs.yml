@@ -19,6 +19,16 @@ jobs:
         node-version: [8.x, 10.x]
         os: [ubuntu-latest, windows-latest, macos-latest]
 
+    services:
+      mysql:
+        image: mysql:5.7.27
+        env:
+          MYSQL_ROOT_PASSWORD: root
+        ports:
+        - 3306
+        volumes:
+        - $HOME/mysql:/var/lib/mysql
+
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
@@ -26,7 +36,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm i -g npminstall && npminstall
-    - run: npm i sqlite3
     - run: npm run ci
       env:
         CI: true

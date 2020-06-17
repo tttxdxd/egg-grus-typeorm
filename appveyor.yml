@@ -6,7 +6,6 @@ environment:
 install:
   - ps: Install-Product node $env:nodejs_version
   - npm i npminstall && node_modules\.bin\npminstall
-  - npm i sqlite3
 
 test_script:
   - node --version

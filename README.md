@@ -9,12 +9,12 @@
 
 [npm-image]: https://img.shields.io/npm/v/egg-grus-typeorm.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-grus-typeorm
-[travis-image]: https://img.shields.io/travis/eggjs/egg-grus-typeorm.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-grus-typeorm
-[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-grus-typeorm.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/eggjs/egg-grus-typeorm?branch=master
-[david-image]: https://img.shields.io/david/eggjs/egg-grus-typeorm.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-grus-typeorm
+[travis-image]: https://img.shields.io/travis/tttxdxd/egg-grus-typeorm.svg?style=flat-square
+[travis-url]: https://travis-ci.org/tttxdxd/egg-grus-typeorm
+[codecov-image]: https://img.shields.io/codecov/c/github/tttxdxd/egg-grus-typeorm.svg?style=flat-square
+[codecov-url]: https://codecov.io/github/tttxdxd/egg-grus-typeorm?branch=master
+[david-image]: https://img.shields.io/david/tttxdxd/egg-grus-typeorm.svg?style=flat-square
+[david-url]: https://david-dm.org/tttxdxd/egg-grus-typeorm
 [snyk-image]: https://snyk.io/test/npm/egg-grus-typeorm/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/egg-grus-typeorm
 [download-image]: https://img.shields.io/npm/dm/egg-grus-typeorm.svg?style=flat-square
@@ -68,7 +68,7 @@ see [config/config.default.js](config/config.default.js) for more detail.
 
 ## Questions & Suggestions
 
-Please open an issue [here](https://github.com/eggjs/egg/issues).
+Please open an issue [here](https://github.com/tttxdxd/egg-grus-typeorm/issues).
 
 ## License
 

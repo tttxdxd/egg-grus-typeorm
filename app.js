@@ -5,7 +5,7 @@ const loader = require('./lib/loader');
 class AppBootHook {
   constructor(app) {
     this.app = app;
-    this.databases = loader.getDatabases(app);
+    this.databases = loader.getDatabases(app); console.log(app.config);
   }
 
   async didLoad() {
